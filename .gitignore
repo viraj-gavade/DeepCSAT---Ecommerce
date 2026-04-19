@@ -1,1 +1,3 @@
 eCommerce_Customer_support_data.csv
+__pycache__/
+*.py[cod]
