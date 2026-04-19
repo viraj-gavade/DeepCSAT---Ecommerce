@@ -28,7 +28,7 @@ DeepCSAT is an ML inference project focused on **CSAT score prediction (1–5)**
 4. Export predictions for downstream use.
 
 ## Setup
-Use a recent Python 3 version.
+Use Python 3.9 or higher.
 
 Install required dependencies:
 
