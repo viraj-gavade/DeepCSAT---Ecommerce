@@ -28,7 +28,7 @@ DeepCSAT is an ML inference project focused on **CSAT score prediction (1–5)**
 4. Export predictions for downstream use.
 
 ## Setup
-Use Python 3.10+.
+Use a recent Python 3 version.
 
 Install required dependencies:
 
@@ -78,4 +78,3 @@ If columns are missing, the preprocessing code applies safe defaults where possi
 ## Notes
 - Ensure model and artifact paths are correct before running inference.
 - If `artifacts/preprocessor.joblib` is missing, run `inference/build_artifacts.py` first.
-- For reproducible environments, consider adding a `requirements.txt` file with pinned versions (for example, `package==x.y.z`).
