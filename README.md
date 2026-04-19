@@ -28,7 +28,7 @@ DeepCSAT is an ML inference project focused on **CSAT score prediction (1–5)**
 4. Export predictions for downstream use.
 
 ## Setup
-Use Python 3.9 or higher.
+Use Python 3.10+ (or another version supported by your TensorFlow build).
 
 Install required dependencies:
 
@@ -73,7 +73,12 @@ The pipeline expects columns used by preprocessing, including identifiers, categ
 - `order_date_time`, `Issue_reported at`, `issue_responded`, `Survey_response_Date`
 - `Item_price`, `connected_handling_time`
 
-If columns are missing, the preprocessing code applies safe defaults where possible.
+Default handling includes:
+- missing numeric engineered inputs (`connected_handling_time`, `Item_price`, `response_time_minutes`) filled from fitted medians,
+- missing date fields (`order_date_time`, `Issue_reported at`, `issue_responded`) filled from fitted modes,
+- missing categorical values filled with `Unknown`.
+
+For reliable predictions, keep the full training-style schema whenever possible.
 
 ## Notes
 - Ensure model and artifact paths are correct before running inference.
