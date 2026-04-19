@@ -78,4 +78,4 @@ If columns are missing, the preprocessing code applies safe defaults where possi
 ## Notes
 - Ensure model and artifact paths are correct before running inference.
 - If `artifacts/preprocessor.joblib` is missing, run `inference/build_artifacts.py` first.
-- The current repository does not include a pinned `requirements.txt`; consider adding one for reproducible environments.
+- For reproducible environments, consider adding a `requirements.txt` file with pinned versions (for example, `package==x.y.z`).
